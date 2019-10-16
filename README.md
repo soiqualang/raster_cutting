@@ -77,6 +77,7 @@ You can export it from Shapefile by `QGIS`
 
 ## Todo
 * Loop all rasters in a folder to cut
+* Make a version run on Linux (Google Colab)
 
 ## Preferences
 
