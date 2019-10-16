@@ -43,6 +43,6 @@ id_arr=GetPGLayer('dbscl')
 
 
 for id in id_arr:
-    cmd='"'+fbin+'" -cutline "PG:dbname=\'raster_cutting\' host=localhost port=5433 user=\'postgres\' password=\'2679191\'" -csql "select * from dbscl where ten_eng=\''+str(id)+'\'" -crop_to_cutline -of GTiff -dstnodata -9999.0 -overwrite "DBSCL_20180611_NSS.tif" "'+fout+'out_'+str(id)+'.tif"'
+    cmd='"'+fbin+'" -cutline "PG:dbname=\'raster_cutting\' host=localhost port=5433 user=\'postgres\' password=\'2679191\'" -csql "select * from dbscl where ten_eng=\''+str(id)+'\'" -crop_to_cutline -of GTiff -dstnodata -9999.0 -overwrite "input/DBSCL_20180611_NSS.tif" "'+fout+'out_'+str(id)+'.tif"'
     # print(cmd)
     subprocess.Popen(cmd,shell=True)
