@@ -35,6 +35,8 @@ dkCol='ten_eng'
 * Config file `t1_sqlite.py` depending on your project
 * Run `python t1_sqlite.py`
 
+<img src="img/h2.png">
+<img src="img/h3.png">
 
 ## PostgreSQL version
 
