@@ -2,7 +2,7 @@ import subprocess
 from osgeo import gdal, ogr, osr
 import os
 
-fbin='C:/Program Files/QGIS 2.18/bin/gdalwarp'
+fbin='C:/Program Files/QGIS 2.18/bin/'
 rasterFile='C:/Users/soiqu/Desktop/raster_cutting/input/DBSCL_20180611_NSS.tif'
 fout='C:/Users/soiqu/Desktop/raster_cutting/output/'
 dbName='dbscl.sqlite'
@@ -40,6 +40,6 @@ code_arr=GetSQLiteLayer(tblName)
 
 
 for code in code_arr:
-    cmd='"'+fbin+'" -cutline "'+dbName+'" -csql "select * from '+tblName+' where "'+dkCol+'"=\''+str(code)+'\'" -crop_to_cutline -of GTiff -dstnodata -9999.0 -overwrite "'+rasterFile+'" "'+fout+'t1_'+str(code)+'.tif"'
+    cmd='"'+fbin+'gdalwarp" -cutline "'+dbName+'" -csql "select * from '+tblName+' where "'+dkCol+'"=\''+str(code)+'\'" -crop_to_cutline -of GTiff -dstnodata -9999.0 -overwrite "'+rasterFile+'" "'+fout+'t1_'+str(code)+'.tif"'
     # print(cmd)
     subprocess.Popen(cmd,shell=True)
