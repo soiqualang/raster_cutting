@@ -1,3 +1,5 @@
+#Module by soiqualang_chentreu
+#https://dothanhlong.org/
 import os
 import subprocess
 from osgeo import gdal, ogr, osr
