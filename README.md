@@ -3,7 +3,7 @@ Cut raster for each features in a vector layer
 
 ## Require
 * Python with `GDAL` installed
-* Path to `bin folder` of QGIS. Ex `C:/Program Files/QGIS 2.18/bin/gdalwarp`
+* Path to `bin folder` of QGIS. Ex `C:/Program Files/QGIS 2.18/bin/`
 
 > You can install python GDAL by wheel package I downloaded
 * For Python 3.6 - 64 bit `GDAL-2.4.1-cp36-cp36m-win_amd64.whl`
@@ -18,7 +18,7 @@ Cut raster for each features in a vector layer
 ### Config
 
 ```python
-fbin='C:/Program Files/QGIS 2.18/bin/gdalwarp'
+fbin='C:/Program Files/QGIS 2.18/bin/'
 rasterFile='C:/Users/soiqu/Desktop/raster_cutting/input/DBSCL_20180611_NSS.tif'
 fout='C:/Users/soiqu/Desktop/raster_cutting/output/'
 dbName='dbscl.sqlite'
@@ -45,7 +45,7 @@ dkCol='ten_eng'
 ### Config
 
 ```python
-fbin='C:/Program Files/QGIS 2.18/bin/gdalwarp'
+fbin='C:/Program Files/QGIS 2.18/bin/'
 rasterFile='C:/Users/soiqu/Desktop/raster_cutting/input/DBSCL_20180611_NSS.tif'
 fout='C:/Users/soiqu/Desktop/raster_cutting/output/'
 databaseServer = "localhost"
