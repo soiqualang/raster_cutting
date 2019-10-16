@@ -1,7 +1,7 @@
 # raster_cutting
 Cut raster for each features in a vector layer
 
-# Require
+## Require
 * Python with `GDAL` installed
 * Path to `bin folder` of QGIS. Ex `C:/Program Files/QGIS 2.18/bin/gdalwarp`
 
@@ -15,7 +15,7 @@ Cut raster for each features in a vector layer
 ## SQlite version (Easier to config)
 > t1_sqlite.py
 
-**Config**
+### Config
 
 ```python
 fbin='C:/Program Files/QGIS 2.18/bin/gdalwarp'
@@ -28,8 +28,26 @@ tblName='dbscl'
 dkCol='ten_eng'
 ```
 
+### Run script
+
+* Download and `cd` to this folder
+* Copy your raster file and sqlite vector layer to this folder
+* Config file `t1_sqlite.py` depending on your project
+* Run `python t1_sqlite.py`
+
+
 ## PostgreSQL version
 
+Updating...
+
+## How to get SQLite file
+
+You can export it from Shapefile by `QGIS`
+
+<img src="img/h1.png">
+
+## Todo
+* Loop all rasters in a folder to cut
 
 ## Preferences
 
