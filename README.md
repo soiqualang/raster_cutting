@@ -40,7 +40,34 @@ dkCol='ten_eng'
 
 ## PostgreSQL version
 
-Updating...
+> t1_pgsql.py
+
+### Config
+
+```python
+fbin='C:/Program Files/QGIS 2.18/bin/gdalwarp'
+rasterFile='C:/Users/soiqu/Desktop/raster_cutting/input/DBSCL_20180611_NSS.tif'
+fout='C:/Users/soiqu/Desktop/raster_cutting/output/'
+databaseServer = "localhost"
+databaseName = "raster_cutting"
+databaseUser = "postgres"
+#Your password to login PostgreSQL
+databasePW = "******"
+#Your PostgreSQL port (defaul is 5432)
+databasePort = "5433"
+connString = "PG: host=%s dbname=%s user=%s password=%s port=%s" % (databaseServer,databaseName,databaseUser,databasePW,databasePort)
+#Vector table (layer) name
+tblName='dbscl'
+#Column name which used as condition to define each feature (ex. each province in dbscl layer)
+dkCol='ten_eng'
+```
+
+### Run script
+
+* Download and `cd` to this folder
+* Copy your raster file and sqlite vector layer to this folder
+* Config file `t1_pgsql.py` depending on your project
+* Run `python t1_pgsql.py`
 
 ## How to get SQLite file
 
