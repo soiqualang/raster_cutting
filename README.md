@@ -4,7 +4,7 @@ Cut raster for each features in a vector layer
 ## SQlite version (Easier to config)
 > t1_sqlite.py
 
-** Config **
+**Config**
 
 ```python
 fbin='C:/Program Files/QGIS 2.18/bin/gdalwarp'
