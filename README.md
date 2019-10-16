@@ -6,8 +6,8 @@ Cut raster for each features in a vector layer
 * Path to `bin folder` of QGIS. Ex `C:/Program Files/QGIS 2.18/bin/gdalwarp`
 
 > You can install python GDAL by wheel package I downloaded
-* For Python 64 bit `GDAL-2.4.1-cp36-cp36m-win_amd64.whl`
-* For Python 32 bit `GDAL-2.4.1-cp36-cp36m-win32.whl`
+* For Python 3.6 - 64 bit `GDAL-2.4.1-cp36-cp36m-win_amd64.whl`
+* For Python 3.6 - 32 bit `GDAL-2.4.1-cp36-cp36m-win32.whl`
 
 > Install wheel
 `pip install GDAL-2.4.1-cp36-cp36m-win32.whl`
