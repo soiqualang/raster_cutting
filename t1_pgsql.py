@@ -2,7 +2,7 @@ import subprocess
 from osgeo import gdal, ogr, osr
 import os
 
-fbin='C:/Program Files/QGIS 2.18/bin/gdalwarp'
+fbin='C:/Program Files/QGIS 2.18/bin/'
 rasterFile='C:/Users/soiqu/Desktop/raster_cutting/input/DBSCL_20180611_NSS.tif'
 fout='C:/Users/soiqu/Desktop/raster_cutting/output/'
 databaseServer = "localhost"
@@ -50,6 +50,6 @@ id_arr=GetPGLayer(tblName)
 
 
 for id in id_arr:
-    cmd='"'+fbin+'" -cutline "PG:dbname=\''+databaseName+'\' host='+databaseServer+' port='+databasePort+' user=\''+databaseUser+'\' password=\''+databasePW+'\'" -csql "select * from '+tblName+' where "'+dkCol+'"=\''+str(id)+'\'" -crop_to_cutline -of GTiff -dstnodata -9999.0 -overwrite "'+rasterFile+'" "'+fout+'t1_'+str(id)+'.tif"'
+    cmd='"'+fbin+'gdalwarp" -cutline "PG:dbname=\''+databaseName+'\' host='+databaseServer+' port='+databasePort+' user=\''+databaseUser+'\' password=\''+databasePW+'\'" -csql "select * from '+tblName+' where "'+dkCol+'"=\''+str(id)+'\'" -crop_to_cutline -of GTiff -dstnodata -9999.0 -overwrite "'+rasterFile+'" "'+fout+'t1_'+str(id)+'.tif"'
     # print(cmd)
     subprocess.Popen(cmd,shell=True)
