@@ -2,7 +2,7 @@
 Cut raster for each features in a vector layer
 
 # Google colab version
-> Just go and run =))
+> Just clone and run =))
 
 https://colab.research.google.com/gist/soiqualang/2643abe44b6df2c73059762c1aaa25ed/raster_cutting_colab_gui_v2.ipynb#forceEdit=true&sandboxMode=true
 
@@ -10,7 +10,7 @@ Thông tin thêm về Google colab
 
 https://dothanhlong.org/ipython-jupyter-notebook-va-google-collaboratory/
 
-# Install local
+# Local install version
 ## Require
 * Python with `GDAL` installed
 * Path to `bin folder` of QGIS. Ex `C:/Program Files/QGIS 2.18/bin/`
