@@ -109,15 +109,15 @@ http://queirozf.com/entries/python-3-subprocess-examples
 
 ## Run tool with QGIS
 
-> Open Python Console in QGIS
+### Open Python Console in QGIS
 
 <img src="img/h5.png">
 
-> Open file `raster_cutting_tiff_folder.py` in Python Console
+### Open file `raster_cutting_tiff_folder.py` in Python Console
 
 <img src="img/h6.png">
 
-> Run tool and results
+### Run tool and results
 
 <img src="img/h7.png">
 
