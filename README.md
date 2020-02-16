@@ -97,3 +97,33 @@ You can export it from Shapefile by `QGIS`
 > Subprocess
 http://queirozf.com/entries/python-3-subprocess-examples
 
+# Cut multi GeoTif in folder by a shapefile layer
+
+> `raster_cutting_tiff_folder.py`
+
+## Download `raster_cutting_tiff_folder.py`
+
+## Config folder raster, folder shapefile, folder output
+
+<img src="img/h4.png">
+
+## Run tool with QGIS
+
+> Open Python Console in QGIS
+
+<img src="img/h5.png">
+
+> Open file `raster_cutting_tiff_folder.py` in Python Console
+
+<img src="img/h6.png">
+
+> Run tool and results
+
+<img src="img/h7.png">
+
+<img src="img/h8.png">
+
+<img src="img/h9.png">
+
+
+

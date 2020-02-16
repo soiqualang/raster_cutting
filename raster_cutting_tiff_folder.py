@@ -27,5 +27,5 @@ for raster_file in foin.glob('*.tif'):
     # print(raster_file)
     #cmd='"gdalwarp -of GTiff -dstnodata -9999.0 -overwrite -cutline '+str(shp_path)+' -crop_to_cutline '+str(raster_file)+' '+getFname(str(raster_file))+'"'
     cmd='"gdalwarp" -cutline "'+str(shp_path)+'" -crop_to_cutline -of GTiff -dstnodata -9999.0 -overwrite "'+str(raster_file)+'" "'+fout+'t_'+getFname(str(raster_file))+'.tif"'
-    print(cmd)
+    #print(cmd)
     subprocess.Popen(cmd,shell=True)
